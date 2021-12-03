@@ -1,0 +1,213 @@
+<html>
+  <head>
+    <title>꽃편지</title>
+    <style>
+      .logo {
+        width: 200px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        min-width: 300px;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        padding: 20px;
+      }
+      .header {
+        display: flex;
+        background-color: #f2c0c6;
+        justify-content: center;
+      }
+      .body {
+        background-color: #faf4f4;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+        height: 100%;
+      }
+      .orderContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .orderTitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+      .orderNo {
+        padding-left: 20px;
+      }
+      .orderBody {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      .productImage > img {
+        width: 200px;
+      }
+      .orderDetail {
+        display: flex;
+        flex-direction: column;
+      }
+      .options {
+        width: 400px;
+        border-top: 2px solid #846c6c;
+        border-bottom: 1px solid #846c6c;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .option {
+        display: flex;
+        justify-content: space-between;
+      }
+      .optionKey {
+        /* font-weight: bold; */
+      }
+      .price {
+        width: 400px;
+        border-bottom: 2px solid #846c6c;
+        padding: 20px;
+      }
+      .deliveryInfo {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .deliveryTitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .deliveryDetail {
+        border-left: 2px solid #846c6c;
+        padding-left: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 5px;
+      }
+      .deliveryItem {
+        display: grid;
+        grid-template-columns: 80px 330px;
+      }
+      .deliveryKey {
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+      .footer {
+        display: flex;
+        background-color: #f2c0c6;
+        padding: 20px;
+        justify-content: center;
+      }
+      .footerLogo {
+        border-right: 1px solid #faf4f4;
+      }
+      .footerLogo > img {
+        width: 100px;
+      }
+      .footerContent {
+        padding-left: 10px;
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><img class="logo" src="./logo_withoutbg.png" /></div>
+      <div class="body">
+        <div class="content">정율리님, 꽃편지를 이용해 주셔서 감사합니다.</div>
+        <div class="orderContainer">
+          <div class="orderTitle">Order Summary</div>
+          <div class="orderNo">Order No. 4729811</div>
+          <div class="orderBody">
+            <div class="productImage">
+              <img src="./mock_img.png" />
+            </div>
+            <div class="orderDetail">
+              <div class="options">
+                <div class="option">
+                  <div class="optionKey">Book Color</div>
+                  <div>Bisque</div>
+                </div>
+                <div class="option">
+                  <div class="optionKey">Flower</div>
+                  <div>Red Rose</div>
+                </div>
+                <div class="option">
+                  <div class="optionKey">Font</div>
+                  <div>산돌구름</div>
+                </div>
+                <div class="option">
+                  <div class="optionKey">Title</div>
+                  <div>너에게 보내는 편지</div>
+                </div>
+              </div>
+              <div class="price">
+                <div class="option">
+                  <div class="optionKey">Price</div>
+                  <div>₩ 45,000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deliveryInfo">
+          <div class="deliveryTitle">Delivery Info</div>
+          <div class="deliveryDetail">
+            <div class="deliveryItem">
+              <div class="deliveryKey">받는분</div>
+              <div>김상훈</div>
+            </div>
+            <div class="deliveryItem">
+              <div class="deliveryKey">연락처</div>
+              <div>010-1234-5678</div>
+            </div>
+            <div class="deliveryItem">
+              <div class="deliveryKey">우편번호</div>
+              <div>32373</div>
+            </div>
+            <div class="deliveryItem">
+              <div class="deliveryKey">배송지</div>
+              <div>서울시 서대문구 연희로 00길 99 xx빌라 123호</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <!-- <div class="footerLogo">
+          <img src="./logo_onlyText.png" alt="" />
+        </div> -->
+        <div class="footerContent">
+          <div>010-1212-3434</div>
+          <div>yulie@flowerletter.co</div>
+          <div>서울시 강남구 언주로 000, xx빌딩</div>
+          <div>© 2021 꽃편지</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
