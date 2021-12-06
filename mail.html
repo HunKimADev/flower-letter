@@ -2,8 +2,12 @@
   <head>
     <title>꽃편지</title>
     <style>
+      html{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 0.9rem;
+      }
       .logo {
-        width: 200px;
+        width: 150px;
       }
       .container {
         display: flex;
@@ -45,7 +49,8 @@
         padding: 10px;
       }
       .orderNo {
-        padding-left: 20px;
+        display: flex;
+        justify-content: center;
       }
       .orderBody {
         display: flex;
@@ -53,14 +58,15 @@
         justify-content: center;
       }
       .productImage > img {
-        width: 200px;
+        height: 187px;
       }
       .orderDetail {
         display: flex;
         flex-direction: column;
       }
       .options {
-        width: 400px;
+        width: 20vw;
+        min-width: 180px;
         border-top: 2px solid #846c6c;
         border-bottom: 1px solid #846c6c;
         padding: 20px;
@@ -73,10 +79,11 @@
         justify-content: space-between;
       }
       .optionKey {
-        /* font-weight: bold; */
+        font-weight: bold;
       }
       .price {
-        width: 400px;
+        width: 20vw;
+        min-width: 180px;
         border-bottom: 2px solid #846c6c;
         padding: 20px;
       }
@@ -145,17 +152,17 @@
           <div class="orderNo">Order No. 4729811</div>
           <div class="orderBody">
             <div class="productImage">
-              <img src="./mock_img.png" />
+              <img src="./sample_img.png" />
             </div>
             <div class="orderDetail">
               <div class="options">
                 <div class="option">
                   <div class="optionKey">Book Color</div>
-                  <div>Bisque</div>
+                  <div>White</div>
                 </div>
                 <div class="option">
                   <div class="optionKey">Flower</div>
-                  <div>Red Rose</div>
+                  <div>Rose</div>
                 </div>
                 <div class="option">
                   <div class="optionKey">Font</div>
@@ -163,7 +170,7 @@
                 </div>
                 <div class="option">
                   <div class="optionKey">Title</div>
-                  <div>너에게 보내는 편지</div>
+                  <div>너에게 쓰는 편지</div>
                 </div>
               </div>
               <div class="price">
