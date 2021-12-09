@@ -1,10 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styled from 'styled-components';
+import PreviewImageUrls from './PreviewImageUrls';
 
 const PreviewFrame = styled.div`
     width: 300px;
     position: relative;
-    margin: 50px;
 
     .cover{
         width: 300px;
@@ -26,27 +26,27 @@ const PreviewFrame = styled.div`
         position: absolute;
         top: 80px;
         right: 30px;
-        font-family: sungsil;
-        font-size: 1.7rem;
+        font-family: ${props => props.font};
+        font-size: 1.8rem;
         color: ${props => props.textColor};
     }
 
 `;
 
 function Preview () {
-    const text = "네가 지나간 자리에" //스테이트로 관리
-    const currentCover = {
-        src: "../resources/black_cover.png",
-        textColor: '#ffffff'
-    }
-    return(<div>
-        <PreviewFrame textColor={currentCover.textColor}>
-            <img className="cover" src={require("../resources/black_cover.png").default}/>
-            <img className="flower" src={require("../resources/rotus.png").default} />
-            <img className="label" src={require("../resources/black_label.png").default}/>
+    //여기부터
+    const text = "너에게 쓰는 편지";
+    const [currentCover, setCurrentCover] = useState(PreviewImageUrls.covers.white);
+    const flowers = PreviewImageUrls.flowers;
+    const currentFont = 'sungsil';
+    //여기까지 리덕스로 관리
+    return(
+        <PreviewFrame textColor={currentCover.textColor} font={currentFont}>
+            <img className="cover" src={currentCover.cover}/>
+            <img className="flower" src={flowers.rose} />
+            <img className="label" src={currentCover.label}/>
             <div className="title">{text}</div>
-        </PreviewFrame>
-    </div>);
+        </PreviewFrame>);
 }
 
 
