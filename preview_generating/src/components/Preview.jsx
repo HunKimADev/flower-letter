@@ -43,7 +43,7 @@ function Preview () {
     return(
         <PreviewFrame textColor={currentCover.textColor} font={currentFont}>
             <img className="cover" src={currentCover.cover}/>
-            <img className="flower" src={flowers.rose} />
+            <img className="flower" src={flowers.sunflower} />
             <img className="label" src={currentCover.label}/>
             <div className="title">{text}</div>
         </PreviewFrame>);
